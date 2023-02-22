@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('home');
+    $home = 'HomePage';
+    return view('home', compact('home'));
 })->name('home');
 
 
