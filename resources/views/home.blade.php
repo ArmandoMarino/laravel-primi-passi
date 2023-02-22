@@ -10,6 +10,7 @@
 
 <body>
     <h1>{{ $home }}</h1>
+    <a href="{{ route('user-data') }}">I tuoi dati</a>
 </body>
 
 </html>

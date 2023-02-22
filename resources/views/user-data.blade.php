@@ -9,7 +9,10 @@
 </head>
 
 <body>
-
+    <h3>{{$greet}} {{$user}}</h3>
+    <p>Anni {{$age}}</p>
+    <a href="{{ route('home') }}">Torna alla Home</a>
 </body>
+
 
 </html>

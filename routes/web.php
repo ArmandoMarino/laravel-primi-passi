@@ -20,8 +20,9 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/greetings', function () {
+Route::get('/user-data', function () {
     $greet = 'Benvenuto,';
-    $user = ['Armando Marino'];
-    return view('greetings', compact('greet', 'user'));
-})->name('greetings');
+    $user = 'Armando Marino';
+    $age = '30';
+    return view('user-data', compact('greet', 'user', 'age'));
+})->name('user-data');
